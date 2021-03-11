@@ -3,6 +3,43 @@
 
 [TOC]
 
+## 基礎-重置快取
+
+```
+php artisan config:cache
+php artisan route:cache
+php artisan cache:clear
+php artisan view:clear
+
+有動到queue 才要執行
+php artisan queue:restart
+
+新增DB
+php artisan migrate
+
+重啟 supervisor
+
+```
+
+
+
+## Laravel 印出SQL指令
+
+```
+DB::connection()->enableQueryLog();
+...
+...
+dd(DB::getQueryLog());
+
+$sStr = var_export(DB::getQueryLog(),true);
+$tom = date("Ymd");
+$file = fopen("log_{$tom}.txt","a+");
+fwrite($file,$sStr);
+fclose($file);
+```
+
+
+
 ## Observer 觀察者
 
 建立觀察者class : app/Observers/名稱Observer.php
