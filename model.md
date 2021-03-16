@@ -15,6 +15,7 @@
 | protected $hidden     | 隱藏參數                   | `['security_questions']`                                     |
 | public $timestamps    | 自動時間戳記               | 預設開啟，false:關閉                                         |
 | public $incrementing  | 自定主鍵計數               | 預設自動計數，false:關閉                                     |
+| protected $dateFormat | 自定義時間戳格式           | protected $dateFormat = 'Y-m-d H:i:s';                       |
 | protected $appends    | 新增屬性                   | `['is_admin']`                                               |
 
 ## [刪除方法]
