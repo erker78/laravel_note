@@ -14,6 +14,7 @@
 | protected $casts      | 變數型態                   | `['TE100_ID' => 'integer','amount'=>'float']`<br /><br />integer、real、float、double、string、boolean、object、array |
 | protected $hidden     | 隱藏參數                   | `['security_questions']`                                     |
 | public $timestamps    | 自動時間戳記               | 預設開啟，false:關閉                                         |
+| public $incrementing  | 自定主鍵計數               | 預設自動計數，false:關閉                                     |
 | protected $appends    | 新增屬性                   | `['is_admin']`                                               |
 
 ## [刪除方法]
